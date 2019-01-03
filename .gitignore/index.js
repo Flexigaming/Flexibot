@@ -45,7 +45,7 @@ bot.on('message', message => {
             .addField("XP:", `${xpfinal[1]} xp`)
             .setFooter(":)")
         message.channel.send({Embed: xp_embed});
-    }}})
+    }})
 
 
     if (message.content === prefix + "help"){
@@ -59,4 +59,4 @@ bot.on('message', message => {
 
 
     
-;
+};
