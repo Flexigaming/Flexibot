@@ -8,7 +8,7 @@ bot.on('ready', function() {
     console.log("connectedç");
 });
 
-bot.login(process.env.TOKEN);
+bot.login("NTMwMzc5NDY1NjMzNjkzNzA2.Dw-lYQ.pY9pyQ99wNfu0OxWKn38z-Nqi2M");
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
@@ -18,5 +18,17 @@ bot.on('message', message => {
     if (message.content === prefix + "Salut"){
         message.reply("Bonjour tout le monde");
         console.log("commande Hey Vient d'être effectué");
+    }
+
+    if ("message.content === prefix + "embed"){
+        var embed = new Discord.RichEmbed()
+            .setTitle("EMBED")
+            .setDescription("Ceci est un Embed")
+            .addField(".help", "Page d'aide", true)
+            .addField("Embed01","chaine de [Flexigaming](https://www.youtube.com/channel/UCqYbjFVLK64KsStYNYZTlWA)", true)
+            .setColor("58FAF4")       
+            .setFooter("Abbonez vous :)")    
+        Message.channel.sendEmbed(embed); 
+        
     }
 });
