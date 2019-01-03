@@ -14,10 +14,14 @@ bot.on('message', message => {
     if (message.content === prefix + "help"){
         message.channel.sendMessage("Liste de commandes: \n -**help");
     }
-
+ 
     if (message.content === prefix + "Salut"){
         message.reply("Bonjour tout le monde");
         console.log("commande Hey Vient d'être effectué");
     }
-    
+
+    if (message.content === prefix + "create"){
+        message.reply("Ce bot a été crée par Flexigaming :)")
+    }
+
 });
