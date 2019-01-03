@@ -24,15 +24,15 @@ bot.on('message', message => {
         message.reply("Ce bot a été crée par _Flexigaming :) ")
     }
 
-    if (message.content === prefix + "embed"){
+    if (message.cotent === prefix + "embed"){
         var embed = new Discord.RichEmbed()
-            .setTitle("EMBED")
-            .setDescription("Ceci est un Embed")
-            .addField(".help", "Page d'aide", true)
-            .addField("Embed01","chaine de [Flexigaming](https://www.youtube.com/channel/UCqYbjFVLK64KsStYNYZTlWA)", true)
-            .setColor("0x58FAF4")       
-            .setFooter("Abbonez vous :)")    
-        Message.channel.sendEmbed(embed); 
+            .setTitle("Embed")
+            .setDescription("Chaine de Flex Sous embed")
+            .addField(".help", "page d'aide", true)
+            .addField("embed1","Suivez [Flexigaming](https://www.youtube.com/channel/UCqYbjFVLK64KsStYNYZTlWA/videos?view_as=subscribe"), true)
+            .addColor("0xFF8000")
+            .setFooter("Bon moment parmis Flexigaming :) Vien ")
+        message.channel.sendembed(embed);
     }
 
 });
