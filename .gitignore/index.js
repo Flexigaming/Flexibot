@@ -26,7 +26,7 @@ bot.on('message', message => {
             .setDescription("Ceci est un Embed")
             .addField(".help", "Page d'aide", true)
             .addField("Embed01","chaine de [Flexigaming](https://www.youtube.com/channel/UCqYbjFVLK64KsStYNYZTlWA)", true)
-            .setColor("58FAF4")       
+            .setColor("0x58FAF4")       
             .setFooter("Abbonez vous :)")    
         Message.channel.sendEmbed(embed); 
 
