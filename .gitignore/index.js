@@ -59,4 +59,4 @@ bot.on('message', message => {
 
 
     
-});
+;
