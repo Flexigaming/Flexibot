@@ -29,6 +29,6 @@ bot.on('message', message => {
             .setColor("0x58FAF4")       
             .setFooter("Abbonez vous :)")    
         Message.channel.sendEmbed(embed); 
-
     }
+
 });
