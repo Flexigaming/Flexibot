@@ -15,17 +15,24 @@ bot.on('message', message => {
         message.channel.sendMessage("`Liste de commandes`: \n ``` --help | --salut | --info | --embed | --ping | --clear | --bvn | By Flexigaming ```");
         
     }
+    
+    if (message.content === prefix + "info"){
+        var embed = new Discord.RichEmbed()
+            .setTitle("Info")
+            .setDescription(" ")
+            .addField("Info du mois :)", " ", true)
+            .addField("Vous pouvez:)", "Rejoinde mes partenaire Ici [AcenaZ](https://discord.gg/6QfWVSM)", true)
+            .setColor("FF8000")
+            .setFooter("Bon moment avec Flexibot ! :)")
+        message.channel.sendEmbed(embed);
+    }
+    
  
     if (message.content === prefix + "salut"){
         message.channel.sendMessage("Bonjour tout le monde");
         console.log("commande Hey Vient d'être effectué");
     }
 
-    if (message.content === prefix + "info"){
-        message.channel.sendMessage("```Ce bot à était crée par Flexigaming``` |`` _Flex#8794 ``|")
-        message.channel.sendMessage("```Je répond au question si vous m'envoyez des mp sur mon discord si dessus```")
-        message.channel.sendMessage("Vous pouvez rejoindre mes Partenaire [AcenaZ](https://discord.gg/6QfWVSM)",true);
-    }
 
     if (message.content === prefix + "embed"){
         var embed = new Discord.RichEmbed()
