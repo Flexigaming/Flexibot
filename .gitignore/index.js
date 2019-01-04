@@ -34,17 +34,17 @@ bot.on('message', message => {
             .setFooter("Bon moment avec Flexibot ! :)")
         message.channel.sendEmbed(embed);
     }
-    break;
-    case "ping":
-    message.channel.sendMessage('Ping serveur : `'+`${message.createdTimestamp - Date.now()} ` + 'ms`');
-    break;
-    case "clear":
-    if (message.member.hasPermission("CLEAR_MESSAGE")){
-        message.channel.fetchMessages()
-            .then(function(list){
-                message.channel.bulkDelete(list);
-            }, function(err){message.channel.send("Erreur Commande")})}
-    break;
+    if (message.content === prefix + "ping"){
+        message.channel.sendMessage("Ping serveur : `"+`${message.createdTimestamp - Date.now()} ` + 'ms`');
+    }
+    
+    if (message.content === prefix + "clear"){
+        if (message.member.hasPermission("CLEAR_MESSAGE")){
+            message.channel.fetchMessages()
+                .then(function(list){
+                    message.channel.bulkDelete(list);
+                }, function(err){message.channel.send("Erreur Commande")})}
+    }
     
     
 
