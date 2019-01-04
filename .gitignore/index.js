@@ -38,7 +38,7 @@ bot.on('message', message => {
         message.channel.sendMessage("Ping serveur : `"+`${message.createdTimestamp - Date.now()} ` + 'ms`');
     }
     
-    if (message.content === prefix + "c"){
+    if (message.content === prefix + "clear"){
         if (message.member.hasPermission("CLEAR_MESSAGE")){
             message.channel.fetchMessages()
                 .then(function(list){
