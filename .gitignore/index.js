@@ -12,7 +12,7 @@ bot.login("NTMwMzc5NDY1NjMzNjkzNzA2.Dw-lYQ.pY9pyQ99wNfu0OxWKn38z-Nqi2M");
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste de commandes: \n *--help", "--create");
+        message.channel.sendMessage("Liste de commandes: \n *--help \n *--Salut \n *--embed \n *--ping \n *--clear");
     }
  
     if (message.content === prefix + "Salut"){
