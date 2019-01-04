@@ -47,6 +47,10 @@ bot.on('message', message => {
                 }, function(err){message.channel.send("Erreur Commande")})}
     }
     
+    if (message.content === prefix + "bvn"){
+        message.channel.sendMessage("Bienvenue :) Amuse toi bien sur notre Serveur discord ! ");
+    
+    }
     
 
 });
