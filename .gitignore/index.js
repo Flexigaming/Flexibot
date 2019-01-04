@@ -15,12 +15,12 @@ bot.on('message', message => {
         message.channel.sendMessage("`Liste de commandes`: \n ``` --help | --salut | --info | --embed | --ping | --clear | --bvn | By Flexigaming ```");
         
     }
-    
+
     if (message.content === prefix + "info"){
         var embed = new Discord.RichEmbed()
             .setTitle("Info")
-            .setDescription(" ")
-            .addField("Info du mois :)", " ", true)
+            .setDescription(" - ")
+            .addField("Info du mois :)", " - ", true)
             .addField("Vous pouvez:)", "Rejoinde mes partenaire Ici [AcenaZ](https://discord.gg/6QfWVSM)", true)
             .setColor("FF8000")
             .setFooter("Bon moment avec Flexibot ! :)")
