@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-var prefix = ("--")
+var prefix = ("**")
 
 bot.on('ready', function() {
-    bot.user.setGame("--Help ");
+    bot.user.setGame("**Help ");
     console.log("connectedç");
 });
 
@@ -38,7 +38,7 @@ bot.on('message', message => {
         message.channel.sendMessage("Ping serveur : `"+`${message.createdTimestamp - Date.now()} ` + 'ms`');
     }
     
-    if (message.content === prefix + "clear"){
+    if (message.content === prefix + "suppr"){
        if (message.member.hasPermission("MANAGE_MESSAGES")){
            message.channel.fetchMessages()
             .then(function(list){
