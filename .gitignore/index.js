@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-var prefix = ("**")
+var prefix = ("--")
 
 bot.on('ready', function() {
-    bot.user.setGame("**Help ");
+    bot.user.setGame("Command: --help");
     console.log("connectedç");
 });
 
@@ -12,10 +12,11 @@ bot.login("NTMwMzc5NDY1NjMzNjkzNzA2.Dw-lYQ.pY9pyQ99wNfu0OxWKn38z-Nqi2M");
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste de commandes: \n *--help *--Salut *--embed *--ping *--clear");
+        message.channel.sendMessage("Liste de commandes: \n -**help");
+        Message.channel.sendMessage("Salut, Create, embed, ping, clear")
     }
  
-    if (message.content === prefix + "salut"){
+    if (message.content === prefix + "Salut"){
         message.channel.sendMessage("Bonjour tout le monde");
         console.log("commande Hey Vient d'être effectué");
     }
@@ -23,7 +24,7 @@ bot.on('message', message => {
     if (message.content === prefix + "create"){
         message.channel.sendMessage("Ce bot a cree les homme :)");
     }
-    
+
     if (message.content === prefix + "embed"){
         var embed = new Discord.RichEmbed()
             .setTitle("Embed")
@@ -38,13 +39,12 @@ bot.on('message', message => {
         message.channel.sendMessage("Ping serveur : `"+`${message.createdTimestamp - Date.now()} ` + 'ms`');
     }
     
-    if (message.content === prefix + "suppr"){
-       if (message.member.hasPermission("MANAGE_MESSAGES")){
-           message.channel.fetchMessages()
-            .then(function(list){
-                message.channel.bulkDelete(list);
-        }, function(err){message.channel.send("Erreur command")})}
-
+    if (message.content === prefix + "clear"){
+        if (message.member.hasPermission("CLEAR_MESSAGE")){
+            message.channel.fetchMessages()
+                .then(function(list){
+                    message.channel.bulkDelete(list);
+                }, function(err){message.channel.send("Erreur Commande")})}
     }
     
     
