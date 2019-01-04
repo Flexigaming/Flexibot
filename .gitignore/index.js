@@ -12,22 +12,23 @@ bot.login("NTMwMzc5NDY1NjMzNjkzNzA2.Dw-lYQ.pY9pyQ99wNfu0OxWKn38z-Nqi2M");
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("`Liste de commandes`: \n ``` --help | --Salut | --create | --embed | --ping | --clear | --bvn | By Flexigaming ```");
+        message.channel.sendMessage("`Liste de commandes`: \n ``` --help | --salut | --info | --embed | --ping | --clear | --bvn | By Flexigaming ```");
         
     }
  
-    if (message.content === prefix + "Salut"){
+    if (message.content === prefix + "salut"){
         message.channel.sendMessage("Bonjour tout le monde");
         console.log("commande Hey Vient d'être effectué");
     }
 
-    if (message.content === prefix + "create"){
-        message.channel.sendMessage("Ce bot a cree les homme :)");
+    if (message.content === prefix + "info"){
+        message.channel.sendMessage("Ce bot à était crée par Flexigaming |`` _Flex#8794 ``|")
+        message.channel.sendMessage("Je répond au question si vous m'envoyez des mp sur mon discord si dessus");
     }
 
     if (message.content === prefix + "embed"){
         var embed = new Discord.RichEmbed()
-            .setTitle("Embed")
+            .setTitle("Méssage intégrer :)")
             .setDescription("Message :)")
             .addField(".help", "page d'aide", true)
             .addField("Go rejoinde:)", "Chaine de [Flexigaming](https://www.youtube.com/channel/UCqYbjFVLK64KsStYNYZTlWA)", true)
