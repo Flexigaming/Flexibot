@@ -39,11 +39,11 @@ bot.on('message', message => {
     }
     
     if (message.content === prefix + "clear"){
-        if (message.member.hasPermission("CLEAR_MESSAGE")){
+        if (message.member.hasPermission("MANAGE_MESSAGES")){
             message.channel.fetchMessages()
                 .then(function(list){
                     message.channel.bulkDelete(list);
-                }, function(err){message.channel.send("Erreur Commande")})};
+                }, function(err){message.channel.send("Erreur Commande")})}
     }
     
     
