@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-var prefix = ("--")
+var prefix = ("**")
 
 bot.on('ready', function() {
-    bot.user.setGame("Command: --help");
+    bot.user.setGame("Prefix ` **  ` | https://discord.gg/6QfWVSM ");
     console.log("connectedç");
 });
 
@@ -12,8 +12,8 @@ bot.login("NTMwMzc5NDY1NjMzNjkzNzA2.Dw-lYQ.pY9pyQ99wNfu0OxWKn38z-Nqi2M");
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste de commandes: \n -**help");
-        Message.channel.sendMessage("Salut, Create, embed, ping, clear")
+        message.channel.sendMessage("Liste de commandes: \n -**help -**Salut -**create -**embed -**ping -**clear");
+        
     }
  
     if (message.content === prefix + "Salut"){
@@ -30,7 +30,7 @@ bot.on('message', message => {
             .setTitle("Embed")
             .setDescription("Message :)")
             .addField(".help", "page d'aide", true)
-            .addField("Go rejoinde:)", "Chaine de Flexigaming[Flexigaming](https://www.youtube.com/channel/UCqYbjFVLK64KsStYNYZTlWA)", true)
+            .addField("Go rejoinde:)", "Chaine de [Flexigaming](https://www.youtube.com/channel/UCqYbjFVLK64KsStYNYZTlWA)", true)
             .setColor("0xFF8000")
             .setFooter("Bon moment avec Flexibot ! :)")
         message.channel.sendEmbed(embed);
