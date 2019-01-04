@@ -21,10 +21,11 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "create"){
-        message.reply("Ce bot a été crée par _Flexigaming :) ")
+        message.reply("Ce bot a été crée par _Flexigaming :) ");
     }
 
-    if (message.cotent === prefix + "embed")''
-        message.reply("En cours de developement")
+    if (message.cotent === prefix + "embed"){
+        message.reply("En cours de developement");
+    }
 
 });
