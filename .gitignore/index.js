@@ -12,10 +12,10 @@ bot.login("NTMwMzc5NDY1NjMzNjkzNzA2.Dw-lYQ.pY9pyQ99wNfu0OxWKn38z-Nqi2M");
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste de commandes: \n *--help, *--Salut, *--embed, *--ping, *--clear");
+        message.channel.sendMessage("Liste de commandes: \n *--help *--Salut *--embed *--ping *--clear");
     }
  
-    if (message.content === prefix + "Salut"){
+    if (message.content === prefix + "salut"){
         message.channel.sendMessage("Bonjour tout le monde");
         console.log("commande Hey Vient d'être effectué");
     }
@@ -38,7 +38,7 @@ bot.on('message', message => {
         message.channel.sendMessage("Ping serveur : `"+`${message.createdTimestamp - Date.now()} ` + 'ms`');
     }
     
-    if (message.content === prefix + "clear"){
+    if (message.content === prefix + "c"){
         if (message.member.hasPermission("CLEAR_MESSAGE")){
             message.channel.fetchMessages()
                 .then(function(list){
