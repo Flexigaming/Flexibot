@@ -19,7 +19,7 @@ bot.on('message', message => {
     if (message.content === prefix + "info"){
         var embed = new Discord.RichEmbed()
             .setTitle("Actualités du jour")
-            .setDescription(" - Voeux de Monsieurs Macron : [Video](https://www.rtl.fr/actu/politique/les-actualites-de-18h-une-majorite-de-francais-pas-convaincue-par-les-voeux-de-macron-7796099416)", true)
+            .addField("Voeux de Monsieurs Macron : [Video](https://www.rtl.fr/actu/politique/les-actualites-de-18h-une-majorite-de-francais-pas-convaincue-par-les-voeux-de-macron-7796099416)", true)
             .addField("Actualités Mondiale", "concurrente de Trump ? : [Video](https://www.ladepeche.fr/article/2019/01/04/2934871-etats-unis-trump-a-l-epreuve-d-une-chambre-democrate.html)", true)
             .addField("Vous pouvez:)", "Rejoinde mes partenaire Ici [AcenaZ](https://discord.gg/6QfWVSM)", true)
             .setColor("FF8000")
