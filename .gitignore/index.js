@@ -27,11 +27,11 @@ bot.on('message', message => {
     if (message.content === prefix + "embed"){
         var embed = new Discord.RichEmbed()
             .setTitle("Embed")
-            .setDescription("Embed :)")
+            .setDescription("Message :)")
             .addField(".help", "page d'aide", true)
-            .addField("Embed 1 :)", "Embed 1 esite pas a suivre [Flexigaming](https://www.youtube.com/channel/UCqYbjFVLK64KsStYNYZTlWA)", true)
+            .addField("Go rejoinde:)", "Chaine de Flexigaming[Flexigaming](https://www.youtube.com/channel/UCqYbjFVLK64KsStYNYZTlWA)", true)
             .setColor("0xFF8000")
-            .setFooter("Bon moment avec Flexigaming ! :)")
+            .setFooter("Bon moment avec Flexibot ! :)")
         message.channel.sendEmbed(embed);
     }
 
