@@ -23,7 +23,7 @@ bot.on('message', message => {
     if (message.content === prefix + "create"){
         message.channel.sendMessage("Ce bot a cree les homme :)");
     }
-
+    
     if (message.content === prefix + "embed"){
         var embed = new Discord.RichEmbed()
             .setTitle("Embed")
@@ -39,11 +39,12 @@ bot.on('message', message => {
     }
     
     if (message.content === prefix + "clear"){
-        if (message.member.hasPermission("MANAGE_MESSAGES")){
-            message.channel.fetchMessages()
-                .then(function(list){
-                    message.channel.bulkDelete(list);
-                }, function(err){message.channel.send("Erreur Commande")})}
+       if (message.member.hasPermission("MANAGE_MESSAGES")){
+           message.channel.fetchMessages()
+            .then(function(list){
+                message.channel.bulkDelete(list);
+        }, function(err){message.channel.send("Erreur command")})}
+
     }
     
     
