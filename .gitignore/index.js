@@ -16,16 +16,16 @@ bot.on('message', message => {
     }
  
     if (message.content === prefix + "Salut"){
-        message.reply("Bonjour tout le monde");
+        message.channel.sendMessage("Bonjour tout le monde");
         console.log("commande Hey Vient d'être effectué");
     }
 
     if (message.content === prefix + "create"){
-        message.reply("Ce bot a été crée par _Flexigaming :) ");
+        message.channel.sendMessage("Ce bot a été crée par _Flexigaming :) ");
     }
 
     if (message.cotent === prefix + "embed"){
-        message.reply("En cours de developement");
+        message.channel.sendMessage("En cours de developement");
     }
 
 });
