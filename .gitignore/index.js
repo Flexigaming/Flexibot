@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-var prefix = ("**")
+var prefix = ("--")
 
 bot.on('ready', function() {
     bot.user.setGame("Create by Flex :) Command: **help");
@@ -21,11 +21,18 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "create"){
-        message.channel.sendMessage("Ce bot a été crée par _Flexigaming :) ");
+        message.channel.sendMessage("Ce bot a cree les homme :)");
     }
 
-    if (message.cotent === prefix + "embed"){
-        message.channel.sendMessage("En cours de developement");
+    if (message.content === prefix + "embed"){
+        var embed = new Discord.RichEmbed()
+            .setTitle("Embed")
+            .setDescription("Embed :)")
+            .addField(".help", "page d'aide", true)
+            .addField("Embed 1 :)", "Embed 1 esite pas a suivre [Flexigaming](https://www.youtube.com/channel/UCqYbjFVLK64KsStYNYZTlWA)", true)
+            .setColor("0xFF8000")
+            .setFooter("Bon moment avec Flexigaming ! :)")
+        message.channel.sendEmbed(embed);
     }
 
 });
