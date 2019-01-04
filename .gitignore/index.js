@@ -22,8 +22,9 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "info"){
-        message.channel.sendMessage("Ce bot à était crée par Flexigaming |`` _Flex#8794 ``|")
-        message.channel.sendMessage("Je répond au question si vous m'envoyez des mp sur mon discord si dessus");
+        message.channel.sendMessage("```Ce bot à était crée par Flexigaming``` |`` _Flex#8794 ``|")
+        message.channel.sendMessage("```Je répond au question si vous m'envoyez des mp sur mon discord si dessus```")
+        message.channel.sendMessage("Vous pouvez rejoindre mes Partenaire [AcenaZ](https://discord.gg/6QfWVSM)",true);
     }
 
     if (message.content === prefix + "embed"){
