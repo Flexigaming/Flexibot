@@ -60,6 +60,12 @@ bot.on('message', message => {
         message.channel.sendMessage("`Bienvenue` :) Amuse toi bien sur notre Serveur `discord` ! ");
     
     }
+
+    if (message.content === prefix + "tirade"){
+        message.channel.sendMessage("Je vais enfin éterniser mon pouvoir sur se monde ")
+        message.channel.sendMessage("`.. -. - ---     .- .-. . .-     ..... .----``")
+        message.channel.sendMessage("```37° 14′ 06″ nord, 115° 48′ 40```"); 
+    }
     
 
 });
