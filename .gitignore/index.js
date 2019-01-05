@@ -62,9 +62,7 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "tirade"){
-        message.channel.sendMessage("Je vais enfin éterniser mon pouvoir sur se monde ")
-        message.channel.sendMessage("`.. -. - ---     .- .-. . .-     ..... .----``")
-        message.channel.sendMessage("```37° 14′ 06″ nord, 115° 48′ 40```"); 
+        message.channel.sendMessage("Je vais enfin éterniser mon pouvoir sur se monde \n ```37° 14′ 06″ nord, 115° 48′ 40```  `.. -. - ---     .- .-. . .-     ..... .----` "); 
     }
     
 
